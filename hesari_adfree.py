@@ -17,26 +17,18 @@ import sys
 import re
 import os
 
-"""
-TODO:
-- enable outputting to text?
-"""
-
 # define functions
 
 def printWelcome():
 	os.system('clear')
-	print "\n******************************\n"
-	time.sleep(.05)
-	print "Lue HS.fi:n sisältöä komentoriviltäsi ilman mainoksia!"
-	time.sleep(.05)
-	print "(c) j0ma, 2015\n"
-	time.sleep(.05)
-	print "HUOM: Kaikki uutiset: \n(c) Helsingin Sanomat, a Sanoma Company 2015"
-	time.sleep(.05)
-	print "\n******************************\n"
-	time.sleep(.05)
-
+	thingsToPrint = ["\n******************************\n",
+					"Lue HS.fi:n sisältöä komentoriviltäsi ilman mainoksia!",
+					"(c) j0ma, 2015\n",
+					"HUOM: Kaikki uutiset: \n(c) Helsingin Sanomat, a Sanoma Company 2015",
+					"\n******************************\n"]
+	for thing in thingsToPrint:
+		print thing
+		time.sleep(.05)
 
 def printCategories(categories):
 	"""
