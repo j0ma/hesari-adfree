@@ -19,6 +19,8 @@ Some of these are installed by default, but using <code>pip install package_name
 
 ### To-Do
 As with most hobby projects, this script is a work in progress. Here are some future ideas I will implement and consider:
-- When choosing an article, typing in <code>0</code> will actually return the last article because of Python's indexing functionality. This needs to be fixed ASAP. (lol :D)
+- When choosing an article, typing in <code>0</code> will actually return the last article because of Python's indexing functionality. This is an easy fix, though. 
+(lol :D)
+- <code>nyt.fi</code> XPath needs fixing. It's tied to the name of the article, so another easy fix.
 - Implement "go back to previous view" -type functionality
 - Some other formatting for article text, e.g. Markdown?
