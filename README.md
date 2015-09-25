@@ -8,7 +8,9 @@ Though mostly born out of frustration with all the distracting features on the <
 was also a great learning opportunity for me. In addition to getting rid of the ads and limitations, I also wanted to code something where I could learn to integrate RSS feeds into Python code, as well as to get better at web scraping using <code>lxml</code> and XPath.
 
 ### Disclaimer
-The copyright of all the articles belongs to Helsingin Sanomat / Sanoma Group, and no infringements of said copyrights are intentional. When using the script to read an article, a scraped copy of the text is downloaded temporarily and displayed on the screen. In other words, the script does not distribute the articles, but each user downloads them for their personal use.
+The copyright of all the articles belongs to Helsingin Sanomat / Sanoma Group, and no infringements of said copyrights are intentional. When using the script to 
+read an article, a scraped copy of the text is downloaded temporarily and displayed on the screen. In other words, the script does not distribute the articles, but 
+each user downloads them for their personal use, which is allowed according to the <a href="https://www.hs.fi/kayttoehdot/">Terms & Conditions</a> of HS.
 
 ### How to use
 
