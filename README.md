@@ -14,10 +14,11 @@ The copyright of all the articles belongs to Helsingin Sanomat / Sanoma Group, a
 
 ### How to use
 <<<<<<< HEAD
-Using <code>hesari-adfree.py</code> is rather easy and intuitive once you get the script running. In order to do that, you should have <code>feedparser</code>, 
+Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running. In order to do that, you should have <code>feedparser</code>, 
 <code>collections</code>, <code>textwrap</code>, <code>lxml</code>, <code>requests</code>, <code>time</code>, <code>sys</code>, and <code>os</code> installed before running the script. 
 =======
-Using <code>hesari-adfree.py</code> is rather easy and intuitive once you get the script running. In order to do that, you should have <code>feedparser</code>, <code>collections</code>, <code>textwrap</code>, <code>lxml</code>, <code>requests</code>, <code>time</code>, <code>sys</code>, and <code>os</code> installed before running the script. 
+Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running. In order to do that, you should have <code>feedparser</code>, 
+<code>collections</code>, <code>textwrap</code>, <code>lxml</code>, <code>requests</code>, <code>time</code>, <code>sys</code>, and <code>os</code> installed before running the script. 
 >>>>>>> 3f187e2fb8ba594942263795eefdb4ad3ccf8bde
 
 Some of these are installed by default, but using <code>pip install package_name</code> should work on the missing ones.
