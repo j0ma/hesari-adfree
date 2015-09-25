@@ -48,12 +48,10 @@ def getUserChoice(listToBeChosenFrom):
 	returns: an int corresponding to the chosen number
 	"""
 	userChoice = "blah"
-	while userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)]:
+	while userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
 		message = "\nValitse syöttämällä numero [1-%i]: " % len(listToBeChosenFrom)
 		userChoice = raw_input(message)
-		if userChoice == "0":
-			break
-		if userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)]:
+		if userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
 			print "Syötä oikeanlainen numero! [1-%i]" % len(listToBeChosenFrom)
 	return int(userChoice)
 
