@@ -153,7 +153,7 @@ def main():
 		else:
 			loopAgain = False
 
-	sys.exit("\nKiitos!")
+	sys.exit("\nKiitos!\n")
 
 if __name__ == "__main__":
 	main()
