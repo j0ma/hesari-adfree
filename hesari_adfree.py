@@ -78,7 +78,7 @@ def printHeadlines(chosenCategory, titles):
 	print "\n******************************\n"
 	print "Uusimmat uutiset aiheesta %s:\n" % chosenCategory
 	for i, title in enumerate(titles):
-		print str(i+1) + ". " + re.sub("&nbsp;", " ", re.sub("&shy;", " ", title))
+		print str(i+1) + ". " + re.sub("&nbsp;", "", re.sub("&shy;", " ", title))
 		time.sleep(.05)
 
 def getArticle(chosenTitle, titlesUrlsDict):
