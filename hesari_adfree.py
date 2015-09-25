@@ -120,8 +120,6 @@ def main():
 	# loop
 	while loopAgain:
 
-		showAnother = ""
-
 		# print welcome
 		printWelcome()
 
@@ -145,6 +143,8 @@ def main():
 		# get article
 		getArticle(chosenTitle, titlesUrlsDict)
 
+		# show another article?
+		showAnother = ""
 		while showAnother not in ["k", "e"]:
 			showAnother = raw_input("Haluatko lukea toisen uutisen? [k/e] ").lower()
 
