@@ -4,7 +4,7 @@
 <code>hesari-adfree.py</code> is a Python script that allows you to read Helsingin Sanomat articles on the command line without seeing 
 annoying ads or having to conform to the 5 articles / week policy that the site enforces.
 
-Though mostly born out of frustration with all the distracting ads and features on the <a href="https://www.hs.fi">Helsingin Sanomat website</a>, this script 
+Though mostly born out of frustration with all the distracting features on the <a href="https://www.hs.fi">Helsingin Sanomat website</a>, this script 
 was also a great learning opportunity for me. In addition to getting rid of the ads and limitations, I also wanted to code something where I could learn to integrate RSS feeds into Python code, as well as to get better at web scraping using <code>lxml</code> and XPath.
 
 ### Disclaimer
