@@ -21,5 +21,5 @@ Some of these are installed by default, but using <code>pip install package_name
 ### To-Do
 As with most hobby projects, this script is a work in progress. Here are some future ideas I will implement and consider:
 - <code>nyt.fi</code> XPath needs fixing. It's tied to the name of the article, so another easy fix.
-- Implement "go back to previous view" -type functionality
+- ~~Implement "go back to previous view" -type functionality~~
 - Some other formatting for article text, e.g. Markdown?
