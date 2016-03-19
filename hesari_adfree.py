@@ -49,8 +49,10 @@ def getUserChoice(listToBeChosenFrom):
 	"""
 	userChoice = "blah"
 	while userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
-		message = "\nValitse syöttämällä numero [1-%i]: " % len(listToBeChosenFrom)
+		message = '\nValitse syöttämällä numero [1-%i] tai "t" aloittaaksesi alusta: ' % len(listToBeChosenFrom)
 		userChoice = raw_input(message)
+		if userChoice == "t":
+			return "t"
 		if userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
 			print "Syötä oikeanlainen numero! [1-%i]" % len(listToBeChosenFrom)
 	return int(userChoice)
@@ -128,6 +130,8 @@ def main():
 
 		# get user's chosen category
 		userCategoryNumber = getUserChoice(categoriesDict.keys())
+		if userCategoryNumber == "t":
+			continue
 		chosenCategory = categoriesDict.keys()[userCategoryNumber-1]
 
 		# import feed, print titles
@@ -138,6 +142,8 @@ def main():
 
 		# ask user to choose a title
 		userTitleNumber = getUserChoice(titlesUrlsDict.keys())
+		if userTitleNumber == "t":
+			continue
 		chosenTitle = titlesUrlsDict.keys()[userTitleNumber-1]
 		
 		# get article
