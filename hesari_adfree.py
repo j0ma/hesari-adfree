@@ -47,14 +47,30 @@ def getUserChoice(listToBeChosenFrom):
 	"""
 	returns: an int corresponding to the chosen number
 	"""
-	userChoice = "blah"
-	while userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
-		message = '\nValitse syöttämällä numero [1-%i] tai "t" aloittaaksesi alusta: ' % len(listToBeChosenFrom)
-		userChoice = raw_input(message)
-		if userChoice == "t":
-			return "t"
-		if userChoice not in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)] or int(userChoice) <= 0:
-			print "Syötä oikeanlainen numero! [1-%i]" % len(listToBeChosenFrom)
+	while True:
+		try:
+			# get user input
+			message = '\nValitse syöttämällä numero [1-%i] tai "t" aloittaaksesi alusta: ' % len(listToBeChosenFrom)
+			userChoice = raw_input(message)
+			
+			# case: user wants to go back
+			if userChoice == "t":
+				return "t"
+			
+			# else, make sure input is properly formatted
+			# and break out of the while-loop
+			else:
+				assert int(userChoice) > 0 and userChoice in [str(i) for i in xrange(1,len(listToBeChosenFrom)+1)]
+				break
+		
+		# handle ctrl-c
+		except KeyboardInterrupt:
+			sys.exit("\nKeyboard interrupt! Exiting...")
+		
+		# handle other exceptions
+		except:
+			print 'Syötä oikeanlainen numero! [1-%i] tai "t" aloittaaksesi alusta' % len(listToBeChosenFrom)
+
 	return int(userChoice)
 
 def getTitlesAndUrls(categoriesDict, chosenCategory):
@@ -115,12 +131,9 @@ def getArticle(chosenTitle, titlesUrlsDict):
 		time.sleep(0.05)
 
 def main():
-	
-	# initialize loop
-	loopAgain = True
 
 	# loop
-	while loopAgain:
+	while True:
 
 		# print welcome
 		printWelcome()
@@ -150,15 +163,19 @@ def main():
 		getArticle(chosenTitle, titlesUrlsDict)
 
 		# show another article?
-		showAnother = ""
-		while showAnother not in ["k", "e"]:
-			showAnother = raw_input("Haluatko lukea toisen uutisen? [k/e] ").lower()
+		while True:
+			try:
+				showAnother = raw_input("Haluatko lukea toisen uutisen? [k/e] ").lower()
+				assert showAnother in ["k", "e"]
+				break
+			except:
+				print 'Varmista, että vastasit "k" tai "e"'
 
 		if showAnother == "k":
 			os.system("clear")
 		else:
-			loopAgain = False
-
+			break
+			
 	sys.exit("\nKiitos!\n")
 
 if __name__ == "__main__":
