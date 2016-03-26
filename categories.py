@@ -5,6 +5,7 @@
 # (c) Jonne Saleva
 
 from collections import OrderedDict
+import re
 
 # initialize categories and urls
 categories = ["Yleinen", "Kotimaa","Politiikka", "Kaupunki", "Ulkomaat", 
@@ -27,5 +28,7 @@ urls = ["http://www.hs.fi/uutiset/rss/",
 "http://www.hs.fi/rss/?osastot=tekniikka",
 "http://www.hs.fi/rss/?osastot=sunnuntai",
 "http://www.hs.fi/rss/?osastot=kuukausiliite"]
+
+urls = [re.sub("hs.fi/rss/", "hs.fi/uutiset/osastoittain/rss", url) for url in urls]
 
 categoriesDict = OrderedDict(zip(categories,urls))
