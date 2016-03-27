@@ -14,8 +14,10 @@ each user downloads them for their personal use, which is allowed according to t
 
 ### How to use
 
-Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running. The main hurdle to jump over are the required libraries not included in 
-stdlib, <code>feedparser</code>, <code>requests</code>, and <code>lxml</code>. To install these (using <code>pip</code>), please run <code>install_dependencies.py</code>.
+Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running.
+
+The main hurdle are the required libraries not included in Python's stdlib: <code>feedparser</code>, <code>requests</code>, and <code>lxml</code>. 
+To install these (using <code>pip</code>), please run <code>install_dependencies.py</code> before attempting to run <code>hesari_adfree.py</code>.
 
 
 ### To-Do
