@@ -14,9 +14,9 @@ each user downloads them for their personal use, which is allowed according to t
 
 ### How to use
 
-Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running. In order to do that, you should have <code>feedparser</code>, <code>textwrap</code>, <code>lxml</code>, <code>requests</code>, <code>time</code>, <code>sys</code>, and <code>os</code> installed before running the script. 
+Using <code>hesari_adfree.py</code> is rather easy and intuitive once you get the script running. The main hurdle to jump over are the required libraries not included in 
+stdlib, <code>feedparser</code>, <code>requests</code>, and <code>lxml</code>. To install these (using <code>pip</code>), please run <code>install_dependencies.py</code>.
 
-Some of these are installed by default, but using <code>pip install package_name</code> should work on the missing ones.
 
 ### To-Do
 As with most hobby projects, this script is a work in progress. Here are some future ideas I will implement and consider:
