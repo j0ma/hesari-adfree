@@ -10,7 +10,7 @@ was also a great learning opportunity for me. In addition to getting rid of the 
 ### Disclaimer
 The copyright of all the articles belongs to Helsingin Sanomat / Sanoma Group, and no infringements of said copyrights are intentional. When using the script to 
 read an article, a scraped copy of the text is downloaded temporarily and displayed on the screen. In other words, the script does not distribute the articles, but 
-each user downloads them for their personal use, which is allowed according to the <a href="https://www.hs.fi/kayttoehdot/">Terms & Conditions</a> of HS.
+each user downloads them for their personal use, which is allowed according to the <a href="https://www.hs.fi/kayttoehdot/">Terms & Conditions</a> (in Finnish) of HS.
 
 ### How to use
 
